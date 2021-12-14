@@ -77,7 +77,7 @@ def input_string(string_ascii):
         # use the sign on the modulo result to see if we are going left or right
         push_button((lambda x: (x < 0 and 'Left' or 'Right'))(times_to_press), PRESS, abs(times_to_press))
         push_button('Stop', PRESS, 1)  # advance to next letter
-        current_set = return_current_set(letter, current_set)
+        current_set = return_current_set(letter, wanted_set)
     push_button('Stop', HOLD, 1)  # finish entry
 
 
